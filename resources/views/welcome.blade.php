@@ -10,7 +10,7 @@
 
     <header class="bg-pink-600 text-white p-4 flex justify-between items-center border-b-2 border-transparent">
         <h1 class="text-2xl font-bold flex items-center">
-            <i class="fas fa-crown mr-2"></i> BunCream
+            <i class="fas fa-ice-cream mr-2"></i> BunCream
         </h1>
         
     </header>
@@ -18,8 +18,8 @@
     <div class="container mx-auto p-8">
         <!-- Contenedor del título -->
         <div class="mb-6 text-center">
-            <h2 class="text-3xl font-bold underline mb-4 text-white">¡Bienvenido a BunCream!</h2>
-            <p class="text-white">Inicia sesión para ver nuestros productos y reservaciones</p>
+            <h2 class="text-3xl font-bold mb-4 text-white">¡Bienvenido a BunCream!</h2>
+            <p class="text-white">Inicia sesión para ver nuestros productos y reservaciones.</p>
         </div>
 
         <!-- Formulario de inicio de sesión -->
@@ -39,7 +39,9 @@
             </p>
             
             <div class="text-center">
-                <button class="w-full py-2 px-4 bg-indigo-600 text-white font-semibold rounded-md shadow hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">Entrar</button>
+                <a href="{{ route('inicio') }}" class="w-full py-2 px-4 bg-indigo-600 text-white font-semibold rounded-md shadow hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 block text-center">
+                    Entrar
+                </a>
             </div>
         </div>
     </div>
