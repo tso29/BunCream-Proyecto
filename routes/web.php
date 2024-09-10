@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,16 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/inicio', 'inicio')->name('inicio');
+Route::view('/', 'inicio');
 
-Route::get('/', function () {
-    $productos = [
-        ['nombre' => 'Producto 1', 'precio' => 100],
-        ['nombre' => 'Producto 2', 'precio' => 200],
-        ['nombre' => 'Producto 3', 'precio' => 300],
-        ['nombre' => 'Producto 4', 'precio' => 400],
-        ['nombre' => 'Producto 5', 'precio' => 500],
-    ];
-    $nombre = 'Tayra Soto';
-    return view('inicio', ['productos' => $productos], ['nombre' => $nombre]);
-});
+Route::get('/productos', [ProductoController::class, 'index'])->name('productos.index');

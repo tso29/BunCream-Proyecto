@@ -9,11 +9,11 @@
     <ul class="menu menu-horizontal font-semibold text-xl px-1">
       <li><a>Inicio</a></li>
       <li>
-        <details>
-          <summary>Menú</summary>
-          <ul class="p-2">
-            <li><a class="text-black text-base">Bebidas</a></li>
-            <li><a class="text-black text-base">Postres</a></li>
+        <details class="relative">
+          <summary class="cursor-pointer text-xl">Menú</summary>
+          <ul class="absolute left-0 mt-2 bg-white border border-gray-300 shadow-lg z-50">
+            <li><a class="block px-4 py-2 text-base text-black hover:bg-gray-100">Bebidas</a></li>
+            <li><a class="block px-4 py-2 text-base text-black hover:bg-gray-100">Postres</a></li>
           </ul>
         </details>
       </li>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Bienvenida</title>
+    <title>Iniciar sesión</title>
 </head>
 <body class="bg-pink-600 flex flex-col min-h-screen">
 

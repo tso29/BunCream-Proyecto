@@ -41,17 +41,17 @@
         @foreach ($productos as $producto)
             <div class="card bg-base-100 w-60 shadow-xl">
                 <figure>
-                    <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+                    <img src="https://source.unsplash.com/random/800x600/?technology&{{ $producto->nombre }}" alt="{{ $producto->nombre }}" />
                 </figure>
                 <div class="card-body">
                     <h2 class="card-title">
-                        {{ $producto['nombre'] }}
-                        <div class="badge badge-secondary">NEW</div>
+                        {{ $producto->nombre }}
+                        <div class="badge badge-secondary">${{ $producto->precio }}</div>
                     </h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p>{{ $producto->descripcion }}</p>
                     <div class="card-actions justify-end">
-                        <div class="badge badge-outline">${{ $producto['precio'] }}</div>
-                        <div class="badge badge-outline">Products</div>
+                        <div class="badge badge-outline">Stock:{{$producto->stock}}</div>
+                        <div class="badge badge-outline">Productos</div>
                     </div>
                 </div>
             </div>
