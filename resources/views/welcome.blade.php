@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Bienvenida</title>
 </head>
-<body class="bg-pink-600">
+<body class="bg-pink-600 flex flex-col min-h-screen">
 
     <header class="bg-pink-600 text-white p-4 flex justify-between items-center border-b-2 border-transparent">
         <h1 class="text-2xl font-bold flex items-center">
@@ -45,17 +46,5 @@
             </div>
         </div>
     </div>
-
-    <footer class="bg-pink-600 text-white text-center p-4 fixed bottom-0 w-full">
-        <p class="m-0 text-sm">&copy; 2024 BunCream. Todos los derechos reservados.</p>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
-    <script>
-        document.getElementById('menu-button').addEventListener('click', () => {
-            const navMenu = document.getElementById('nav-menu');
-            navMenu.classList.toggle('hidden');
-        });
-    </script>
 </body>
 </html>

@@ -24,5 +24,5 @@ Route::get('/', function () {
         ['nombre' => 'Producto 5', 'precio' => 500],
     ];
     $nombre = 'Tayra Soto';
-    return view('welcome', ['productos' => $productos], ['nombre' => $nombre]);
+    return view('inicio', ['productos' => $productos], ['nombre' => $nombre]);
 });
