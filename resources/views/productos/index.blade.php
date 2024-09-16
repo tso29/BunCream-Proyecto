@@ -5,9 +5,8 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 m-4">
         @foreach ($productos as $producto)
             <div class="card bg-base-100 w-60 shadow-xl">
-                <figure>
-                    <img src="https://source.unsplash.com/random/800x600/?beverages,desserts&{{ $producto->nombre }}" alt="{{ $producto->nombre }}" />
-                </figure>
+                    {{-- <img src="https://source.unsplash.com/random/800x600/?beverages,desserts&{{ $producto->nombre }}" alt="{{ $producto->nombre }}" />  --}}
+                <figure><img src="https://loremflickr.com/200/200/store&{{ $producto->nombre }}" alt="{{ $producto->nombre }}"></figure>
                 <div class="card-body">
                     <h2 class="card-title">
                         {{ $producto->nombre }}
