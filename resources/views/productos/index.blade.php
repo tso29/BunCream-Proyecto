@@ -15,8 +15,12 @@
                     </h2>
                     <p>{{ Str::limit($producto->descripcion,50) }}</p>
                     <div class="card-actions justify-end">
-                        <div class="badge badge-outline">Stock:{{$producto->stock}}</div>
-                        <div class="badge badge-outline">Productos</div>
+                        <a href="{{ route('productos.edit', $producto->id) }}" class="btn btn-xs btn-primary">Editar</a>
+                        <form action="{{ route('productos.destroy', $producto->id) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-xs btn-error">Eliminar</button>
+                        </form>
                     </div>
                 </div>
             </div>

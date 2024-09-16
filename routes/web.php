@@ -16,4 +16,5 @@ use App\Http\Controllers\ProductoController;
 
 Route::view('/', 'inicio');
 
-Route::get('/productos', [ProductoController::class, 'index'])->name('productos.index');
+//CRUD de Productos
+Route::resource('productos', ProductoController::class); //Crear 7 rutas para el CRUD
