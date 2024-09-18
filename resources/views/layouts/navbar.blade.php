@@ -16,9 +16,9 @@
       </div>
       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-pink-600 rounded-box w-52">
         <li><a class="text-white" href="{{ route('home') }}">BunCream</a></li>
-        <li><a class="text-white" href="{{ route('home') }}">Servicios</a></li>
+        <li><a class="text-white" href="{{ route('servicios') }}">Servicios</a></li>
         <li><a class="text-white" href="{{ route('productos.index') }}">Productos</a></li>
-        <li><a class="text-white" href="{{ route('home') }}">Acerca de nosotros</a></li>
+        <li><a class="text-white" href="{{ route('informacion') }}">Acerca de nosotros</a></li>
       </ul>
     </div>
   </div>
@@ -26,9 +26,9 @@
   {{-- menu desktop --}}
   <div class="flex-1 hidden md:flex space-x-4">
     <a href="{{ route('home') }}" class="btn btn-ghost btn-sm text-white text-base">Buncream</a>
-    <a href="{{ route('home') }}" class="btn btn-ghost btn-sm text-white">Servicios</a>
+    <a href="{{ route('servicios') }}" class="btn btn-ghost btn-sm text-white">Servicios</a>
     <a href="{{ route('productos.index') }}" class="btn btn-ghost btn-sm text-white">Productos</a>
-    <a href="{{ route('home') }}" class="btn btn-ghost btn-sm text-white">Acerca de nosotros</a>
+    <a href="{{ route('informacion') }}" class="btn btn-ghost btn-sm text-white">Acerca de nosotros</a>
   </div>
 
   {{-- Si esta autenticado muestra menu de usuario, sino muestra botones de login y registro --}}
